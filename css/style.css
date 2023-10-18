@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: math;
 }
 
 nav{
@@ -165,7 +166,17 @@ line-height: normal;
     display: flex;
     flex-direction: column;
    
+    background-size: 80% 80%;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    padding: 20px;
+    height: 100vh; 
+    
+    
+   
 }
+
+
 
 .event-heading{
     border-bottom: 6px solid black;
@@ -258,3 +269,267 @@ line-height: normal;
     height: 40px;
     width: 110px;
 }
+
+/* manishi insights */
+
+.insights{
+    height: 100vh;
+    width: 100%;
+   
+
+}
+
+.insights-title{
+    border-bottom:4px solid black;
+    width: 300px;
+    justify-content: center;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.insights-title p{
+    font-size: 40px;
+    font-weight:700;
+    height: fit-content;
+}
+
+.left{
+    width: 25%;
+    position: relative;
+    left: 0px;
+    
+    margin-top: 0;
+    width: 52%;
+    justify-self: start;
+    height: fit-content;
+    margin: auto;
+    margin-top: 3%;
+}
+
+.left p{
+    font-size: 26px;
+    padding-right: 16px;
+    font-family: cursive;
+    padding-top: 18px;
+}
+
+.right{
+    width: 25%;
+    position: relative;
+    right: 0px;
+    
+    margin-top: 35px;
+    width: 52%;
+    justify-self: end;
+    height: fit-content;
+    margin: auto;
+    margin-top: 4%;
+}
+
+.right p{
+    font-size: 26px;
+    padding-right: 16px;
+    font-family: cursive;
+    padding-top: 18px;
+}
+
+.right-heading{
+    height: 60px;
+    width: 250px;
+    border-bottom:3px inset black;
+   
+    
+    
+    
+}
+
+.right-heading p{
+    font-family: fantasy;
+    font-weight: 500;
+    padding-top: 20px;
+   
+}
+
+.left-heading p{
+    font-family: fantasy;
+    font-weight: 500;
+    padding-top: 20px;
+    
+}
+
+.left-heading{
+    height: 60px;
+    width: 250px;
+    
+    
+    font-family: cursive;
+    font-weight: 700;
+    border-bottom:3px inset black;
+}
+
+
+/* footer */
+
+.footer{
+    height: 100vh;
+    width: 100%;
+
+}
+
+.twitter{
+    height: 80%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+
+}
+
+
+
+.entry-content .twitter-tweet-rendered {
+    max-width: 100% !important;
+    }
+
+.footer-div{
+    height: 20%;
+    background-color: #000;
+    color: #fff;
+
+}
+.footer-div div{
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+    margin-left: 20px;
+
+}
+
+.embedded-tweet {
+    width: 300px; 
+    height:400px;
+    margin: auto;
+    
+}
+
+.footer-div p{
+    margin-left:10px ;
+    
+}
+.footer-contact{
+    margin-top: 10px;
+}
+/*media query*/
+
+@media only screen and (max-width: 600px) {
+    .hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero-content{
+        margin-top: 45px;
+    }
+    
+    .ship-text{
+        position:absolute;
+        top: 10%;
+
+    }
+
+    .hero-content h1{
+        position: absolute;
+        top: 12%;
+    }
+
+    .svg-mode {
+        position: absolute;
+        width: 100%;
+        margin-top: 20px;
+        justify-content: center;
+        top: 20%;
+    
+    }
+
+    .big-quote{
+        position:absolute ;
+        top: 60%;
+        
+    }
+
+    .quote{
+        margin-left: -10%;
+    }
+    
+    
+   .hero-content button {
+        position:absolute;
+        top: 70%;
+    }
+    
+  }
+
+
+  #clockContainer {
+    position: relative;
+    margin-left: auto;
+    margin-right:auto ;
+    height: 20vw;
+    /*to make the height and width responsive*/
+    width: 20vw;
+    background: url(https://media.geeksforgeeks.org/wp-content/uploads/20210302161254/imgonlinecomuaCompressToSizeOmNATjUMFKw-300x300.jpg) no-repeat;
+    /*setting our background image*/
+    background-size: 100%;
+    }
+    
+    #hour,
+    #minute,
+    #second {
+    position: absolute;
+    background: black;
+    border-radius: 10px;
+    transform-origin: bottom;
+    }
+    
+    #hour {
+    width: 1.8%;
+    height: 25%;
+    top: 25%;
+    left: 48.85%;
+    opacity: 0.8;
+    }
+    
+    #minute {
+    width: 1.6%;
+    height: 30%;
+    top: 19%;
+    left: 48.9%;
+    opacity: 0.8;
+    }
+    
+    #second {
+    width: 1%;
+    height: 40%;
+    top: 9%;
+    left: 49.25%;
+    opacity: 0.8;
+    }
+
+
+
+    /*animations*/
+
+    @keyframes cursorBlink {
+        0% { border-right: 2px solid transparent; }
+        50% { border-right: 2px solid black; }
+        100% { border-right: 2px solid transparent; }
+      }
+
+      .word {
+        display: inline-block;
+        border-right: 2px solid transparent;
+        animation: cursorBlink 1s infinite;
+      }
