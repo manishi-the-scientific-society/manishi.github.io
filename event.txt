@@ -1,0 +1,16 @@
+<div class="event-heading">
+        <p>Events</p>
+    </div>
+    <div class="presents"><p>Manīshi Presents</p></div>
+    <div class="event-name"><p>EVENT'S NAME</p></div>
+    <div class="event-type"><p>type of event e.g. movie night</p></div>
+    <div class="event-theme"><p>Theme of the event LOREM IPSUM DOLOR</p></div>
+    <div class="event-grid">
+        <div class="event-date"><i class="fa fa-calendar" aria-hidden="true"></i><p>30-Aug-2023</p></div>
+        <div class="event-venue"><i class="fa fa-map-marker"></i><p>GH-576</p></div>
+        <div class="event-status"><p>>>REGISTRATION IS OPEN</p></div>
+        <div></div>
+        
+        
+    </div>
+    <div class="event-button"><button>Register Now</button><button>Learn More</button></div>

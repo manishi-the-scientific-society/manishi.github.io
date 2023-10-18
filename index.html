@@ -4,21 +4,101 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-        @media only screen and (max-width: 768px) {
-            h1{
-                text-align: center;
-            }
-            img{
-                
-                width: 100%;
-                margin:0 !important ;
-            }
-}
+   <link rel="stylesheet" href="./css/style.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <style>
+    
+    ::-webkit-scrollbar {
+      width: 6px;
+    }
+    
+  
+    ::-webkit-scrollbar-track {
+      background: white; 
+    }
+     
+    
+    ::-webkit-scrollbar-thumb {
+      background: #00000088; 
+    }
+    
+  
+    ::-webkit-scrollbar-thumb:hover {
+      background: #555; 
+    }
     </style>
 </head>
 <body>
-    <h1 style="text-align: center; margin-top: 10%;">Work is in progress</h1>
-    <img style="margin-left:32%;" src="-sLiSq.gif" alt="Schrodingers-cat GIFs">
+    <h1 id="desktop-alert" style="margin:40px; ">Open on desktop</h1>
+    <header>
+    <nav>
+        <div class="nav-container">
+    <div class="logo-title">
+        <div class="logo"><a><img class="logo-image" src="./assets/manishi.png"></a></div>
+        <div class="nav-title"><h1>Manīshi</h1></div>
+    </div>
+        <div class="navigation-items">
+            <div id="event"><h1 class="navigation-items-text">Events</h1></div>
+            <div id="p-events"><h1 class="navigation-items-text">Previous Events</h1></div>
+            <div id="about"><h1 class="navigation-items-text">About US</h1></div>
+            <div id="contact"><h1 class="navigation-items-text">Contact US</h1></div>
+        </div>
+    </div>
+    </nav>
+</header>
+<section class="hero">
+    <div class="hero-content">
+        <p class="ship-text">Ship for sailors of science</p>
+        <h1>Manīshi</h1>
+        <div class="quote"><p class="big-quote">A society of like-minded individuals who come together to learn the wonders of science and its application for their benefit and of the <span class="word">WORLD.</span></div>
+       <a> <button>Join Now</button></a>
+    </div>
+    <div class="svg-mode">
+        <img  width="80%"s src="./assets/lightmode.svg">
+    </div>
+
+</section>
+<section class="event" id="event1">
+    <div class="event-heading">
+        <p>Events</p>
+    </div>
+    <div id="clockContainer">
+        <div id="hour"></div>
+        <div id="minute"></div>
+        <div id="second"></div>
+    </div>
+    <div><h1 style="font-family: cursive; text-align: center; margin-top: 36px;">No upcoming events yet. We will inform you. Keep visiting.</h1></div>
+    </section>
+<section id="insights" class="insights">
+    <div class="insights-title"><p>Manishi Insights</p></div>
+    
+    <div class="left">
+        <div class="left-heading"><p>Who we are?</p></div>
+        <p>
+        We are a society of individuals who have scientific thinking. Those individuals can be students, academicians, industralists or government officials.
+        </p></div>
+        
+    <div class="right">
+        <div class="right-heading"><p>What do we do?</p></div>
+       <p> We organise group discussions, workshops, presentations and screenings. We also publish a trimester magazine that covers wide range of subjects of science, arts and culture.</p></div>
+
+</section>
+<section>
+    
+</section>
+<section class="footer">
+    <div class="twitter">
+       
+        <blockquote class="twitter-tweet" data-dnt="true"><p lang="en" dir="ltr">Kudos to the team for successfully organizing the event. A special mention for Akshat, Swarna, Ayush, Yasha and Hanshika, Divyanshu, Noor, Ashutosh, Nidhi, Rajveer and Vineet, Harsh, Aryan, Kamlesh, Atal &amp; Puneet. <a href="https://twitter.com/DeanScienceBHU?ref_src=twsrc%5Etfw">@DeanScienceBHU</a> <a href="https://twitter.com/dsw_bhu?ref_src=twsrc%5Etfw">@dsw_bhu</a> <a href="https://twitter.com/bhupro?ref_src=twsrc%5Etfw">@bhupro</a> <a href="https://t.co/VnGH66faQo">https://t.co/VnGH66faQo</a> <a href="https://t.co/jeakkDKInd">pic.twitter.com/jeakkDKInd</a></p>&mdash; ISc-BHU Student Activities (@studentsIScBHU) <a href="https://twitter.com/studentsIScBHU/status/1690557954725195776?ref_src=twsrc%5Etfw">August 13, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>  </div>
+    <div id="footer-div" class="footer-div">
+     <div><p class="footer-contact">Contact US</p></div>  
+     <div> <i class="fa fa-envelope" style="font-size:16px;color:white"></i><p>manishithescientificsociety@gmail.com</p></div>
+     <div><i class="fa fa-instagram" style="font-size:16px;color:white"></i><p>@manishi_bhu</p></div>
+     <div><i class="fa fa-twitter-square" style="font-size:16px"></i><p>@manishi_bhu</p></div>
+    </div>
+
+</section>
+    <script src="./script/clock.js"></script>
+    <script src="./script/script.js"></script>
 </body>
 </html>
