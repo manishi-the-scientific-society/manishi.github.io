@@ -6,15 +6,6 @@ let insights =  document.getElementById("insights");
 let contact = document.getElementById("contact");
 let footer = document.getElementById("footer-div");
 
-let desktopAlert = document.getElementById("desktop-alert");
-
-
-let header = document.getElementsByTagName("header");
-let section = document.getElementsByTagName("section");
-console.log(header)
-
-desktopAlert.style.display = "none";
-
 const deviceWidth  = window.innerWidth;
 
 events.addEventListener("click",()=>{
@@ -34,13 +25,3 @@ contact.addEventListener("click",()=>{
 })
 
 
-if(deviceWidth<700){
-    header[0].style.display = "none"
-    section[0].style.display = "none"
-    section[1].style.display = "none"
-    section[2].style.display = "none"
-    section[3].style.display = "none"
-    section[4].style.display = "none"
-    desktopAlert.style.display = "block";
-    document.write("Please open on a desktop; we are optimizing for mobile.")
-}
