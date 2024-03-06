@@ -449,6 +449,23 @@ nav {
     margin-top: 10px;
 }
 
+/*Previous Event*/
+.PEbox{
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.PEdate{
+    width: 40%;
+    height: 20px;
+    background-color: #000;
+    
+    color: white;
+}
+
+
 /*media query*/
 
 @media only screen and (max-width: 600px) {
@@ -682,6 +699,20 @@ nav {
     margin-top: 20vh;
 }
 
+
+/*Previous Event*/
+
+.PEbox{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.PEphotoContainer{
+    height: 100%;
+   
+  
+}
 
 
 

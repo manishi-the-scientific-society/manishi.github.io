@@ -5,15 +5,26 @@ let about = document.getElementById("about");
 let insights =  document.getElementById("insights");
 let contact = document.getElementById("contact");
 let footer = document.getElementById("footer-div");
+let Home = document.getElementById("Home");
 
 const deviceWidth  = window.innerWidth;
+let currentPath = window.location.pathname;
+
+
+if(currentPath!="/"){
+Home.addEventListener("click",()=>{
+    window.location.href = "/"
+})
+}
+
+if(currentPath=="/"){
 
 events.addEventListener("click",()=>{
     event1.scrollIntoView({behavior:"smooth"})
 })
 
 pEvents.addEventListener("click",()=>{
-    alert("We will upload the details soon...")
+    window.location.href = "/previousEvent.html";
 })
 
 about.addEventListener("click",()=>{
@@ -24,4 +35,4 @@ contact.addEventListener("click",()=>{
     footer.scrollIntoView({behavior:"smooth"})
 })
 
-
+}
