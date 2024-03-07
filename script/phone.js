@@ -29,13 +29,13 @@ let Home = document.getElementById("Home");
 
 let currentPath = window.location.pathname;
 
-if(currentPath!="/index.html"){
+if(currentPath!="/"){
     Home.addEventListener("click",()=>{
         window.location.href = "/"
     })
     }
 
-if(currentPath=="/index.html"){
+if(currentPath=="/"){
 
 events.addEventListener("click",()=>{
     event1.scrollIntoView({behavior:"smooth"});

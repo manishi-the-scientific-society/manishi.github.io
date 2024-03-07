@@ -11,14 +11,14 @@ const deviceWidth  = window.innerWidth;
 let currentPath = window.location.pathname;
 console.log(currentPath);
 
-if(currentPath!="/index.html"){
+if(currentPath!="/"){
 
 Home.addEventListener("click",()=>{
     window.location.href = "/"
 })
 }
 
-if(currentPath=="/index.html"){ 
+if(currentPath=="/"){ 
 
 events.addEventListener("click",()=>{
     event1.scrollIntoView({behavior:"smooth"})
