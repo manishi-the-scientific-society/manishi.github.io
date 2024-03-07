@@ -14,7 +14,7 @@ console.log(currentPath);
 if(currentPath!="/"){
 
 Home.addEventListener("click",()=>{
-    window.location.href = "/index.html"
+    window.location.href = "https://manishisociety.in";
 })
 }
 
