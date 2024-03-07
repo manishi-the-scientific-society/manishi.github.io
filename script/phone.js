@@ -25,7 +25,17 @@ let about = document.getElementsByClassName("sm-about")[0];
 let insights =  document.getElementById("insights");
 let contact = document.getElementsByClassName("sm-contact")[0];
 let footer = document.getElementById("footer-div");
+let Home = document.getElementById("Home");
 
+let currentPath = window.location.pathname;
+
+if(currentPath!="/index.html"){
+    Home.addEventListener("click",()=>{
+        window.location.href = "/"
+    })
+    }
+
+if(currentPath=="/index.html"){
 
 events.addEventListener("click",()=>{
     event1.scrollIntoView({behavior:"smooth"});
@@ -33,7 +43,7 @@ events.addEventListener("click",()=>{
 })
 
 pEvents.addEventListener("click",()=>{
-    alert("We will upload the details soon...");
+    window.location.href = "/previousEvent.html";
     smNavigation.style.display = "none";
 })
 
@@ -47,13 +57,7 @@ contact.addEventListener("click",()=>{
     smNavigation.style.display = "none";
 })
 
-
-
-
-
-console.log(hamburger)
-console.log(smNavigation)
-
+}
 
 
 
